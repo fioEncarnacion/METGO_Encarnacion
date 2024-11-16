@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/busqueda_fondo"
+    android:padding="16dp"
+    tools:context=".ui.busqueda.BusquedaFragment">
+
+    <EditText
+        android:id="@+id/codigoParadaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese código de parada"
+        android:inputType="number"
+    android:imeOptions="actionSearch"/> <!-- Botón de acción con icono de lupa -->
+
+    <ImageButton
+        android:id="@+id/buscarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search"
+        android:contentDescription="Buscar"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
+
+<!-- <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@drawable/busqueda_fondo"
+   tools:context=".ui.busqueda.BusquedaFragment">
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <EditText
+           android:id="@+id/editTextNumber2"
+           android:layout_width="346dp"
+           android:layout_height="54dp"
+           android:layout_marginLeft="15dp"
+           android:layout_marginTop="64dp"
+           android:background="@drawable/cajablanca"
+           android:drawableEnd="@drawable/oi"
+           android:ems="10"
+           android:hint="Ingrese codigo"
+           android:paddingStart="20dp"
+           android:inputType="number"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.497"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.157" />
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <Button
+       android:id="@+id/open"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:text="Open Activity" />
+
+
+
+</FrameLayout> -->

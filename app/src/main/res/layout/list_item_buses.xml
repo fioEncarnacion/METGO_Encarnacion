@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@drawable/caja_azul"
+    android:elevation="8dp"
+    app:cardCornerRadius="26dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:background="@drawable/caja_azul"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Pequeño CardView para el ícono del bus y su código -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/caja_bus"
+            android:elevation="3dp"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:layout_width="145dp"
+                android:layout_height="54dp"
+                android:background="@drawable/caja_bus"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- Ícono del bus dentro del pequeño CardView -->
+                <ImageView
+                    android:id="@+id/busIconImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Bus Icon"
+                    android:src="@drawable/icono_bus_postivivo" />
+
+                <!-- Código del bus dentro del pequeño CardView -->
+                <TextView
+                    android:id="@+id/busCodeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bus Code"
+                    android:textColor="#F4F4F4"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- TextView para el nombre del bus al lado derecho -->
+        <TextView
+            android:id="@+id/busNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Bus Name"
+            android:textColor="#F4F4F4"
+            android:textSize="18sp" />
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+    <!--    <TextView
+                android:id="@+id/busNameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Bus Name"
+                android:textColor="#F4F4F4"
+                android:textSize="18sp"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:gravity="end" />  Alineado a la derecha -->

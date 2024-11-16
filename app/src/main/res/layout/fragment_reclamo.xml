@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9BD6EA "
+    tools:context=".ui.reclamo.ReclamoFragment">
+
+    <!-- Imagen del encabezado -->
+    <ImageView
+        android:id="@+id/headerImageView"
+        android:layout_width="match_parent"
+        android:layout_height="237dp"
+        android:contentDescription="Header Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/banner_tarifario" />
+
+    <!-- Contenedor de todo el contenido debajo del encabezado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:orientation="vertical">
+
+        <!-- Aquí puedes incluir tu Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@android:color/transparent"
+            app:titleTextColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="585dp"
+            android:orientation="vertical"
+            android:padding="19dp">
+
+            <EditText
+                android:id="@+id/txtnombre_r"
+                android:layout_width="327dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="64dp"
+                android:background="@drawable/cajablanca"
+                android:drawableStart="@drawable/ic_identidad"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Nombre y Apellidos"
+                android:inputType="text"
+                android:paddingStart="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <EditText
+                android:id="@+id/txtemail_r"
+                android:layout_width="327dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/cajablanca"
+                android:drawableStart="@drawable/ic_correo"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:paddingStart="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtnombre_r" />
+
+            <EditText
+                android:id="@+id/txtcodigo_r"
+                android:layout_width="327dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/cajablanca"
+                android:drawableStart="@drawable/ic_paradero"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Cod. Parada / Bus"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtemail_r" />
+
+            <EditText
+                android:id="@+id/txtdescripcion_r"
+                android:layout_width="352dp"
+                android:layout_height="151dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="24dp"
+                android:background="#F4F4F4"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Descripcion"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtcodigo_r" />
+
+            <Button
+                android:id="@+id/btnenviar_r"
+                android:layout_width="159dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#2C4ECA"
+                android:text="ENVIAR"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtdescripcion_r" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

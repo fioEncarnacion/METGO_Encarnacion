@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@drawable/caja_azul"
+    android:elevation="8dp"
+    app:cardCornerRadius="26dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:background="@drawable/caja_azul"
+        android:padding="16dp">
+
+        <!-- Ícono de la parada -->
+        <ImageView
+            android:id="@+id/paradaIconImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Ícono de la Parada"
+            android:src="@drawable/ic_bus_stop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Código de la parada -->
+        <TextView
+            android:id="@+id/paradaCodeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Código de Parada"
+            android:textColor="#F4F4F4"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/paradaIconImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Nombre de la parada debajo del código -->
+        <TextView
+            android:id="@+id/paradaNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Nombre de la Parada"
+            android:textColor="#F4F4F4"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/paradaIconImageView"
+            app:layout_constraintTop_toBottomOf="@+id/paradaCodeTextView" />
+
+        <!-- Contenedor para los íconos de buses -->
+        <LinearLayout
+            android:id="@+id/paradaBusIconsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/paradaIconImageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_busqueda"
+            android:title="@string/menu_busqueda" />
+        <!--   android:icon="@drawable/ic_menu_slideshow"-->
+
+        <item
+            android:id="@+id/nav_mapaDeParadas"
+            android:title="@string/menu_mapadeparadas" />
+        <!--   android:icon="@drawable/ic_menu_slideshow"-->
+
+        <item
+            android:id="@+id/nav_buses"
+            android:title="@string/menu_buses" />
+        <!--   android:icon="@drawable/ic_menu_slideshow"-->
+
+        <item
+            android:id="@+id/nav_paradas"
+            android:title="@string/menu_paradas" />
+        <!--   android:icon="@drawable/ic_menu_slideshow"-->
+
+        <item
+            android:id="@+id/nav_noticias"
+            android:title="@string/menu_noticias" />
+        <!--   android:icon="@drawable/ic_menu_slideshow"-->
+
+        <item
+            android:id="@+id/nav_sugerencia"
+            android:title="@string/menu_sugerencia" />
+        <!--   android:icon="@drawable/ic_menu_slideshow"-->
+
+        <item
+            android:id="@+id/nav_reclamo"
+            android:title="@string/menu_reclamo" />
+        <!--   android:icon="@drawable/ic_menu_slideshow"-->
+
+        <item
+            android:id="@+id/nav_tarifario"
+            android:title="@string/menu_tarifario" />
+        <!--   android:icon="@drawable/ic_menu_slideshow"-->
+
+        <item
+            android:id="@+id/nav_acercaDe"
+            android:title="@string/menu_acercade" />
+        <!--   android:icon="@drawable/ic_menu_slideshow"-->
+
+    </group>
+</menu>

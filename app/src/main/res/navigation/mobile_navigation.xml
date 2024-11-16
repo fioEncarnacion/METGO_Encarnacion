@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_busqueda">
+
+    <fragment
+        android:id="@+id/nav_acercaDe"
+        android:name="empresa.android.metgo_encarnacion.ui.acercade.AcercaDeFragment"
+        android:label="Acerca De"
+        tools:layout="@layout/fragment_acerca_de" />
+
+    <fragment
+        android:id="@+id/nav_buses"
+        android:name="empresa.android.metgo_encarnacion.ui.buses.BusesFragment"
+        android:label="Buses"
+        tools:layout="@layout/fragment_buses" />
+
+    <fragment
+        android:id="@+id/nav_busqueda"
+        android:name="empresa.android.metgo_encarnacion.ui.busqueda.BusquedaFragment"
+        android:label="Busqueda"
+        tools:layout="@layout/fragment_busqueda">
+        <action
+            android:id="@+id/action_nav_busqueda_to_nav_detalleparada"
+            app:destination="@id/nav_detalleparada" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_mapaDeParadas"
+        android:name="empresa.android.metgo_encarnacion.ui.mapadeparadas.MapaDeParadasFragment"
+        android:label="Mapa de paradas"
+        tools:layout="@layout/fragment_mapa_de_paradas" />
+
+    <fragment
+        android:id="@+id/nav_noticias"
+        android:name="empresa.android.metgo_encarnacion.ui.noticias.NoticiasFragment"
+        android:label="Noticias"
+        tools:layout="@layout/fragment_noticias" />
+
+    <fragment
+        android:id="@+id/nav_paradas"
+        android:name="empresa.android.metgo_encarnacion.ui.paradas.ParadasFragment"
+        android:label="Paradas"
+        tools:layout="@layout/fragment_paradas" />
+
+    <fragment
+        android:id="@+id/nav_reclamo"
+        android:name="empresa.android.metgo_encarnacion.ui.reclamo.ReclamoFragment"
+        android:label="Reclamo"
+        tools:layout="@layout/fragment_reclamo" />
+
+    <fragment
+        android:id="@+id/nav_sugerencia"
+        android:name="empresa.android.metgo_encarnacion.ui.sugerencia.SugerenciaFragment"
+        android:label="Sugerencia"
+        tools:layout="@layout/fragment_sugerencia" />
+
+    <fragment
+        android:id="@+id/nav_tarifario"
+        android:name="empresa.android.metgo_encarnacion.ui.tarifario.TarifarioFragment"
+        android:label="Tarifario"
+        tools:layout="@layout/fragment_tarifario" />
+
+    <fragment
+        android:id="@+id/nav_detalleparada"
+        android:name="empresa.android.metgo_encarnacion.ui.tarifario.TarifarioFragment"
+        android:label="Detalle de parada"
+        tools:layout="@layout/fragment_detalleparada" />
+
+</navigation>

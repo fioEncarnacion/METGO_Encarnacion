@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_tarifario"
+    tools:context=".ui.tarifario.TarifarioFragment">
+
+    <!-- Imagen del encabezado -->
+    <ImageView
+        android:id="@+id/headerImageView"
+        android:layout_width="match_parent"
+        android:layout_height="237dp"
+        android:contentDescription="Header Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/banner_tarifario" />
+
+    <!-- Contenedor de todo el contenido debajo del encabezado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:orientation="vertical">
+
+        <!-- Aquí puedes incluir tu Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:background="@android:color/transparent"
+            app:titleTextColor="@android:color/white" />
+
+        <!-- Contenido del Fragment -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="491dp"
+            android:orientation="vertical"
+            android:padding="19dp">
+
+            <!-- CardView 1 (solapado con la imagen del encabezado) -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="34dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/borde_tarifario"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Nombre de la tarjeta -->
+                    <TextView
+                        android:id="@+id/card1NameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ALIMENTADORAS GENERALES"
+                        android:textColor="#F4F4F4"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Contenedor para el ícono y el monto en horizontal -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="16dp">
+
+                        <!-- Ícono de tarjeta alineado a la izquierda -->
+                        <ImageView
+                            android:id="@+id/card1IconImageView"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:contentDescription="Card Icon"
+                            android:src="@drawable/tarjeta_general"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"/>
+
+                        <!-- Monto alineado a la derecha -->
+                        <TextView
+                            android:id="@+id/card1AmountTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="S/ 1.50"
+                            android:textColor="#F4F4F4"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="end"
+                            android:layout_weight="1"
+                            android:textAlignment="viewEnd"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CardView 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="34dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="4dp"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/borde_tarifario"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Nombre de la tarjeta -->
+                    <TextView
+                        android:id="@+id/card2NameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ESTUDIANTES"
+                        android:textColor="#F4F4F4"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Contenedor para el ícono y el monto en horizontal -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="16dp">
+
+                        <!-- Ícono de tarjeta alineado a la izquierda -->
+                        <ImageView
+                            android:id="@+id/card2IconImageView1"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:contentDescription="Card Icon 1"
+                            android:src="@drawable/tarjeta_numero2"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"/>
+
+                        <!-- Segundo ícono de tarjeta -->
+                        <ImageView
+                            android:id="@+id/card3IconImageView2"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="15dp"
+                            android:contentDescription="Card Icon 2"
+                            android:src="@drawable/tarjeta_numero3"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"/>
+
+
+                        <!-- Monto alineado a la derecha -->
+                        <TextView
+                            android:id="@+id/card2AmountTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="S/ 0.75"
+                            android:textColor="#F4F4F4"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_gravity="end"
+                            android:layout_weight="1"
+                            android:textAlignment="viewEnd"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+

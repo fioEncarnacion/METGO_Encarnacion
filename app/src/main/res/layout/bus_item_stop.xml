@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/caja_celestebig"
+    android:elevation="4dp"
+    app:cardCornerRadius="26dp">
+
+    <LinearLayout
+        android:layout_width="403dp"
+        android:layout_height="101dp"
+        android:background="@drawable/caja_celestebig"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Contenedor horizontal para alinear el pequeño CardView y el tiempo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Pequeño CardView con el icono del bus y su código -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/caja_azul"
+                android:elevation="4dp"
+                app:cardCornerRadius="12dp">
+                <!--  android:cardBackgroundColor="@android:color/holo_red_light"-->
+
+                <LinearLayout
+                    android:layout_width="97dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/caja_azul"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <!-- Ícono del bus dentro del CardView -->
+                    <ImageView
+                        android:id="@+id/busIconImageView"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/icono_detalle_bus" />
+
+                    <!-- Código del bus dentro del CardView -->
+                    <TextView
+                        android:id="@+id/busCodeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bus Code"
+                        android:textColor="#F4F4F4"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Contenedor para mostrar dos tiempos a la derecha -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical"> <!-- Alineamos el contenido a la derecha -->
+
+                <!-- Primer tiempo: Tiempo de llegada -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:gravity="end"
+                    android:orientation="horizontal"> <!-- Alineamos el contenido a la derecha -->
+
+                    <!-- Ícono para el tiempo de llegada -->
+                    <ImageView
+                        android:id="@+id/arrivalIconImageView"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:src="@drawable/icono_bus_negativo_tiempo" /> <!-- Espacio entre el ícono y el texto -->
+
+                    <TextView
+                        android:id="@+id/timeArrivalTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00:00 min"
+                        android:textColor="#004A98"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Segundo tiempo: Tiempo estimado -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:gravity="end"
+                    android:orientation="horizontal"> <!-- Alineamos el contenido a la derecha -->
+
+                    <!-- Ícono para el tiempo estimado -->
+                    <ImageView
+                        android:id="@+id/estimatedIconImageView"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:src="@drawable/icono_bus_postivo_tiempo" /> <!-- Espacio entre el ícono y el texto -->
+
+                    <TextView
+                        android:id="@+id/timeEstimatedTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="00:00 min"
+                        android:textColor="#F4F4F4"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Información adicional del bus, ahora debajo del pequeño CardView -->
+        <TextView
+            android:id="@+id/busNameTextView"
+            android:layout_width="309dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="0dp"
+            android:text="Bus Name"
+            android:textColor="#F4F4F4"
+            android:textSize="16sp" /> <!-- Espacio entre el pequeño CardView y el nombre del bus -->
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
